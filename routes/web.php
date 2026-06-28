@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
 
-Route::get('/', function () {
+Route::get('/', fn() => redirect()->route('login'));
     return view('welcome');
 });
 
