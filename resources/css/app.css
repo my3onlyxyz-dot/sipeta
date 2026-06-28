@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@source "../views";
+
+:root{color-scheme:light}
+body{font-family:'Inter',system-ui,sans-serif;background:#f1f5f9;color:#0f172a;-webkit-font-smoothing:antialiased}
+.font-display{font-family:'Space Grotesk',sans-serif}
+.font-code{font-family:'JetBrains Mono',monospace}
+*:focus-visible{outline:2px solid #047857;outline-offset:2px;border-radius:6px}
+[x-cloak]{display:none!important}
+
+/* ikon toggle tema */
+.theme-moon{display:none}
+.dark .theme-moon{display:block}
+.dark .theme-sun{display:none}
+
+/* ===================== DARK MODE ===================== */
+.dark{color-scheme:dark}
+.dark body{background:#0b1120 !important;color:#e2e8f0 !important}
+
+.dark .bg-white{background-color:#111827 !important}
+.dark .bg-slate-50{background-color:#0b1120 !important}
+.dark .bg-slate-100{background-color:#1e293b !important}
+.dark .bg-slate-900{background-color:#334155 !important}
+.dark .hover\:bg-slate-50:hover{background-color:#1e293b !important}
+.dark .hover\:bg-slate-100:hover{background-color:#293548 !important}
+
+.dark .text-slate-900{color:#f1f5f9 !important}
+.dark .text-slate-800{color:#e2e8f0 !important}
+.dark .text-slate-700{color:#cbd5e1 !important}
+.dark .text-slate-600{color:#94a3b8 !important}
+.dark .text-slate-500{color:#94a3b8 !important}
+.dark .text-slate-400{color:#64748b !important}
+
+.dark .ring-slate-200{--tw-ring-color:#1f2937 !important}
+.dark .border-slate-300{border-color:#334155 !important}
+.dark .border-slate-200{border-color:#1f2937 !important}
+.dark .border-slate-100{border-color:#1f2937 !important}
+.dark .border-slate-50{border-color:#172033 !important}
+.dark .divide-slate-50 > :not([hidden]) ~ :not([hidden]){border-color:#172033 !important}
+.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]){border-color:#1f2937 !important}
+
+.dark input,.dark select,.dark textarea{background-color:#0f172a !important;color:#e2e8f0 !important;border-color:#334155 !important}
+.dark input::placeholder,.dark textarea::placeholder{color:#64748b !important}
+
+.dark .bg-emerald-50{background-color:rgba(16,185,129,.12) !important}
+.dark .bg-emerald-50\/40{background-color:rgba(16,185,129,.08) !important}
+.dark .bg-sky-50{background-color:rgba(56,189,248,.12) !important}
+.dark .bg-amber-50{background-color:rgba(245,158,11,.12) !important}
+.dark .bg-rose-50{background-color:rgba(244,63,94,.12) !important}
+.dark .text-emerald-700{color:#34d399 !important}
+.dark .text-sky-700{color:#7dd3fc !important}
+.dark .text-amber-700{color:#fbbf24 !important}
+.dark .text-rose-700{color:#fb7185 !important}
+.dark .text-rose-600{color:#fb7185 !important}
+.dark .ring-emerald-200{--tw-ring-color:rgba(16,185,129,.3) !important}
+.dark .ring-sky-200{--tw-ring-color:rgba(56,189,248,.3) !important}
+.dark .ring-amber-200{--tw-ring-color:rgba(245,158,11,.3) !important}
+.dark .ring-rose-200{--tw-ring-color:rgba(244,63,94,.3) !important}
+.dark .ring-emerald-300{--tw-ring-color:rgba(16,185,129,.4) !important}
+.dark .ring-rose-300{--tw-ring-color:rgba(244,63,94,.4) !important}
+.dark .ring-slate-300{--tw-ring-color:#334155 !important}
+.dark .hover\:bg-rose-50:hover{background-color:rgba(244,63,94,.12) !important}
+.dark .hover\:bg-emerald-50:hover{background-color:rgba(16,185,129,.12) !important}
