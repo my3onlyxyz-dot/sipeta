@@ -32,3 +32,6 @@ Thumbs.db
 /database/database.sqlite
 /public/build
 /storage/*.key
+
+*.bak
+sipeta-*.sh
