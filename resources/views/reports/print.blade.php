@@ -12,7 +12,7 @@ table{width:100%;border-collapse:collapse;font-size:14px}td{padding:4px 6px;vert
 </style></head><body>
 <div class="bar">Simpan sebagai PDF &nbsp;<button onclick="window.print()">Cetak / Simpan PDF</button></div>
 <div class="sheet" style="margin-top:48px">
-  <div class="kop"><h1>Pemerintah Kabupaten</h1><p>Sistem Informasi Pelaporan Sengketa Tanah (SIPETA)</p></div>
+  <div class="kop"><h1>Pemerintah Kabupaten</h1><p>Sistem Informasi Pelaporan Sengketa Tanah (SIMPATI)</p></div>
   <h2>Laporan Sengketa Tanah</h2><p class="meta">Nomor: {{ $report->nomor }}</p>
   <table>
     <tr><td class="l">Judul</td><td class="s">:</td><td>{{ $report->judul }}</td></tr>

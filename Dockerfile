@@ -1,4 +1,4 @@
-# ---- SIPETA : image produksi (PHP + Node build) ----
+# ---- SIMPATI : image produksi (PHP + Node build) ----
 FROM php:8.4-cli
 
 # Ekstensi & dependensi sistem

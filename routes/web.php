@@ -14,7 +14,7 @@ Route::get('/halo', function () {
 Route::resource('produk', ProdukController::class);
 Route::get('/start', fn () => view('start'));
 
-// ===== SIPETA — Pelaporan Sengketa Tanah =====
+// ===== SIMPATI — Pelaporan Sengketa Tanah =====
 Route::middleware('guest')->group(function () {
     Route::get('/login', [\App\Http\Controllers\AuthController::class, 'showLogin'])->name('login');
     Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/laporan/{report}', [\App\Http\Controllers\ReportController::class, 'destroy'])->name('reports.destroy');
 });
 
-// ===== SIPETA v2 — modul tambahan =====
+// ===== SIMPATI v2 — modul tambahan =====
 Route::middleware('auth')->group(function () {
     Route::get('/profil', [\App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profil', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
@@ -62,7 +62,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/pengguna/{user}', [\App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
 });
 
-// ===== SIPETA v3 — kontak & export =====
+// ===== SIMPATI v3 — kontak & export =====
 Route::middleware('auth')->group(function () {
     Route::get('/kontak', fn () => view('kontak'))->name('kontak');
     Route::get('/rekap/unduh', [\App\Http\Controllers\RekapController::class, 'export'])->name('rekap.export');

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', 'Dashboard') · SIPETA</title>
-  <script>(function(){try{var t=localStorage.getItem('sipeta-theme');if(t==='dark'||(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+  <title>@yield('title', 'Dashboard') · SIMPATI</title>
+  <script>(function(){try{var t=localStorage.getItem('simpati-theme');if(t==='dark'||(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   <style>.nav-ico{width:18px;height:18px;flex:none}</style>
 </head>
@@ -25,7 +25,7 @@
         <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5"><path d="M12 21s-7-5.2-7-11a7 7 0 1114 0c0 5.8-7 11-7 11z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
       </span>
       <div class="leading-tight">
-        <p class="font-display font-bold text-slate-900">SIPETA</p>
+        <p class="font-display font-bold text-slate-900">SIMPATI</p>
         <p class="text-[11px] text-slate-400">Brang Ene</p>
       </div>
     </div>
@@ -117,7 +117,7 @@
   </div>
 
   <script>
-    function toggleTheme(){var h=document.documentElement;h.classList.toggle('dark');try{localStorage.setItem('sipeta-theme',h.classList.contains('dark')?'dark':'light');}catch(e){}}
+    function toggleTheme(){var h=document.documentElement;h.classList.toggle('dark');try{localStorage.setItem('simpati-theme',h.classList.contains('dark')?'dark':'light');}catch(e){}}
   </script>
 </body>
 </html>

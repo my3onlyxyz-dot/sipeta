@@ -2,7 +2,7 @@
 @section('title', 'Masuk')
 @section('content')
   <h1 class="font-display text-2xl font-bold text-slate-900 mb-1">Selamat datang</h1>
-  <p class="text-sm text-slate-500 mb-6">Masuk untuk melanjutkan ke SIPETA.</p>
+  <p class="text-sm text-slate-500 mb-6">Masuk untuk melanjutkan ke SIMPATI.</p>
   @if($errors->any())<div class="mb-4 rounded-lg bg-rose-50 ring-1 ring-rose-200 text-rose-700 text-sm px-3 py-2">{{ $errors->first() }}</div>@endif
   <form method="POST" action="{{ route('login') }}" class="space-y-4">
     @csrf
