@@ -4,13 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
 
 Route::get('/', fn() => redirect()->route('login'));
-    return view('welcome');
-});
-
-Route::get('/halo', function () {
-    return view('halo');
-});
-
 Route::resource('produk', ProdukController::class);
 Route::get('/start', fn () => view('start'));
 
@@ -21,7 +14,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/register', [\App\Http\Controllers\AuthController::class, 'showRegister'])->name('register');
     Route::post('/register', [\App\Http\Controllers\AuthController::class, 'register']);
 });
-
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
@@ -34,7 +26,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/laporan/{report}/status', [\App\Http\Controllers\ReportController::class, 'updateStatus'])->name('reports.status');
     Route::delete('/laporan/{report}', [\App\Http\Controllers\ReportController::class, 'destroy'])->name('reports.destroy');
 });
-
 // ===== SIMPATI v2 — modul tambahan =====
 Route::middleware('auth')->group(function () {
     Route::get('/profil', [\App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
@@ -61,7 +52,6 @@ Route::middleware('auth')->group(function () {
     Route::post('/pengguna/{user}/reset', [\App\Http\Controllers\UserController::class, 'resetPassword'])->name('users.reset');
     Route::delete('/pengguna/{user}', [\App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
 });
-
 // ===== SIMPATI v3 — kontak & export =====
 Route::middleware('auth')->group(function () {
     Route::get('/kontak', fn () => view('kontak'))->name('kontak');
