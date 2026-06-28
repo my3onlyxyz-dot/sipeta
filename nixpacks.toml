@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["php84", "php84Extensions.pdo_mysql", "php84Extensions.mbstring", "php84Extensions.zip", "php84Extensions.gd", "nodejs_20"]
+
+[phases.install]
+cmds = ["composer install --no-dev --optimize-autoloader --no-interaction", "npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "sh docker-entrypoint.sh"
