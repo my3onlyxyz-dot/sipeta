@@ -62,3 +62,16 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f1f5f9;color:#0f172a;-
 .dark .ring-slate-300{--tw-ring-color:#334155 !important}
 .dark .hover\:bg-rose-50:hover{background-color:rgba(244,63,94,.12) !important}
 .dark .hover\:bg-emerald-50:hover{background-color:rgba(16,185,129,.12) !important}
+
+/* === SIMPATI-V4 === */
+html{scroll-behavior:smooth}
+*{-webkit-tap-highlight-color:transparent}
+body{font-feature-settings:"liga"1,"kern"1}
+
+.dark .hero-pattern{filter:brightness(0.7)}
+
+/* Scroll bar tipis */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#94a3b8}
